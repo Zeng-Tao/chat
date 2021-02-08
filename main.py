@@ -34,7 +34,7 @@ class ConnectionManager:
 
     def disconnect(self, websocket: WebSocket):
         # self.active_connections.remove(websocket)
-        url = websocket.url
+        url = websocket.url.path
         if "game" in url:
             self.game_connections.remove(websocket)
         elif "code" in url:

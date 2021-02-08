@@ -22,9 +22,9 @@
             var messages = document.getElementById('messages')
             var message = document.createElement('li')
             var content = document.createTextNode(event.data)
-            if (content.contains("You wrote")) {
-                
-            }
+            // if (content.contains("You wrote")) {
+            //     return
+            // }
             message.appendChild(content)
             messages.appendChild(message)
         };
